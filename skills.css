@@ -1,0 +1,251 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #D8D3C3;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color:#3C3F2D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+  }
+  
+  .navbar a {
+    color: #FBD117;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #fbd117;
+  }
+  
+  /* Skills Section */
+  .skills {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem 4rem;
+    background-color: #1A1A1A;
+    text-align: center;
+  }
+  
+  .skills-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-card {
+    background-color: #2C2C2C;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #D8D3C3;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .skill-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-card h3 {
+    font-size: 1.5rem;
+    color: #fbd117;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background-color: #fbd117;
+    color: #1A1A1A;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4E4A33;
+    color: #fff;
+  }
+  
+  .projects {
+    padding: 4rem 2rem;
+    background-color: #1A1A1A;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: #1E1E1E;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    color: #D8D3C3;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-content h3 {
+    color: #fbd117;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .project-content p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags span {
+    background-color: #fbd117;
+    color: #1E1E1E;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: #fbd117;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #fff;
+  }
+  
+  .footer {
+    background-color: #1A1A1A;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-links img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .footer-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  @media (max-width: 600px) {
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

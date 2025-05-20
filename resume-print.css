@@ -1,0 +1,100 @@
+@media print {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Georgia', serif;
+        font-size: 12px;
+        line-height: 1.75;
+        color: #000;
+        height: 100%;
+        background: none !important;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 7.5in;
+        margin: 0 auto;
+        padding: 25px;
+        background: #fff !important;
+        border: 1px solid #ccc;
+        box-shadow: none !important;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .header img {
+        max-width: 85px;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .header p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .section {
+        margin-bottom: 18px;
+        page-break-inside: avoid;
+    }
+
+    .section h2 {
+        font-size: 14px;
+        font-variant: small-caps;
+        font-weight: bold;
+        margin-bottom: 6px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+    }
+
+    .section p,
+    .section ul {
+        font-size: 12px;
+    }
+
+    .section ul {
+        list-style-type: square;
+        padding-left: 18px;
+    }
+
+    .section ul li {
+        margin-bottom: 6px;
+    }
+
+    .edu-entry {
+        margin-bottom: 12px;
+    }
+
+    .edu-entry strong {
+        font-weight: bold;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .btn-black,
+    .btn-print {
+        display: none !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+}
