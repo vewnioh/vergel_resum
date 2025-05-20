@@ -70,9 +70,12 @@
 }
 
   
-  .hero-img img:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s;
+  .hero-img img {
+      width: 600px;
+      height: 700px;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 5px solid #3C3F2D;
   }
   
   .hero-text {
